@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"errors"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net"
 	"net/http"
 	"net/url"
@@ -86,7 +86,7 @@ func dialAndNegotiate(addr, proxyUsername, proxyPassword, proxyDomain string, ba
 		debugf("ntlm> Could not read response from proxy: %s", err)
 		return conn, err
 	}
-	_, err = ioutil.ReadAll(resp.Body)
+	_, err = io.ReadAll(resp.Body)
 	if err != nil {
 		debugf("ntlm> Could not read response body from proxy: %s", err)
 		return conn, err
