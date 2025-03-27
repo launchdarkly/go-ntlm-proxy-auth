@@ -1,0 +1,15 @@
+{
+  "packages" : {
+    "." : {
+      "release-type" : "go",
+      "bump-minor-pre-major" : true,
+      "versioning" : "default",
+      "include-component-in-tag" : false,
+      "bootstrap-sha" : "89583a609c412cfbd24e99639f2318c7bce64999",
+      "exclude-paths": [
+        ".github",
+        ".vscode"
+      ]
+    }
+  }
+}
