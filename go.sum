@@ -1,4 +1,4 @@
-github.com/launchdarkly/go-ntlmssp v1.0.2 h1:cZU0o9Q9wnlTH8Vw3pex0+/sGyNIsj7T1lCzC2gqAcM=
-github.com/launchdarkly/go-ntlmssp v1.0.2/go.mod h1:6ZSwvQs+WBrFEsgKFjrRod8Bj/D4WHHSoo7qJGdgD8g=
+github.com/launchdarkly/go-ntlmssp v1.0.3 h1:rFxOnnEJ2DzJ+NU0plhXqnldJUwn3wWJFTWKCmaiQdE=
+github.com/launchdarkly/go-ntlmssp v1.0.3/go.mod h1:P1z6fX/y9zgBvfnZP7AKWilW9AX5M3czsa1S4Zpp2nM=
 golang.org/x/crypto v0.45.0 h1:jMBrvKuj23MTlT0bQEOBcAE0mjg8mK9RXFhRH6nyF3Q=
 golang.org/x/crypto v0.45.0/go.mod h1:XTGrrkGJve7CYK7J8PEww4aY7gM3qMCElcJQ8n8JdX4=
