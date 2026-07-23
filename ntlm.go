@@ -91,7 +91,9 @@ func dialAndNegotiate(addr, proxyUsername, proxyPassword, proxyDomain string, ba
 		debugf("ntlm> Could not read response body from proxy: %s", err)
 		return conn, err
 	}
-	resp.Body.Close()
+	if err := resp.Body.Close(); err != nil {
+		debugf("ntlm> Could not close response body from proxy: %s", err)
+	}
 	if resp.StatusCode != http.StatusProxyAuthRequired {
 		debugf("ntlm> Expected %d as return status, got: %d", http.StatusProxyAuthRequired, resp.StatusCode)
 		return conn, errors.New(http.StatusText(resp.StatusCode))
