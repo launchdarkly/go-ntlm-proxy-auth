@@ -2,6 +2,13 @@
 
 All notable changes to the project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org).
 
+## [1.0.4](https://github.com/launchdarkly/go-ntlm-proxy-auth/compare/v1.0.3...v1.0.4) (2026-07-27)
+
+
+### Bug Fixes
+
+* Bump vulnerable golang.org/x/crypto to v0.52.0 ([#12](https://github.com/launchdarkly/go-ntlm-proxy-auth/issues/12)) ([66a5382](https://github.com/launchdarkly/go-ntlm-proxy-auth/commit/66a53824fa498705038fbdb3aec9b69d83dec93b))
+
 ## [1.0.3](https://github.com/launchdarkly/go-ntlm-proxy-auth/compare/v1.0.2...v1.0.3) (2025-11-21)
 
 
