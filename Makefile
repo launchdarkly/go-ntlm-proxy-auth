@@ -1,4 +1,4 @@
-GOLANGCI_LINT_VERSION=v1.64.5
+GOLANGCI_LINT_VERSION=v2.12.2
 
 LINTER=./bin/golangci-lint
 LINTER_VERSION_FILE=./bin/.golangci-lint-version-$(GOLANGCI_LINT_VERSION)
@@ -49,7 +49,7 @@ $(COVERAGE_PROFILE_RAW): $(ALL_SOURCES)
 
 $(LINTER_VERSION_FILE):
 	rm -f $(LINTER)
-	curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s $(GOLANGCI_LINT_VERSION)
+	GOBIN=$(CURDIR)/bin go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@$(GOLANGCI_LINT_VERSION)
 	touch $(LINTER_VERSION_FILE)
 
 lint: $(LINTER_VERSION_FILE)
